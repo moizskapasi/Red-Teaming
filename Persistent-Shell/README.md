@@ -6,7 +6,7 @@ This is a reverse shell script written for Linux. The reverse shell itself is a 
 
 ## Usage
 
-This script is a payload that it supposed to run on the victim machine.
+This script is a payload that it supposed to run on the victim machine (Tested on Ubuntu 20).
 
 The shell retains the user that creates this file on the victim machine.
 
